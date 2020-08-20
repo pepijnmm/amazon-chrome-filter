@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amazon remove movies extension</title>
+	<script defer src="options.js"></script>
+</head>
+<body style="width: 370px;">
+	<div style="display:block; margin-bottom:5px;">
+		Remove or red:
+		<select id="choose">
+		 <option value="red">red</option>
+		 <option value="remove">remove</option>
+		</select>
+	</div>
+	<div style="display:block; margin-bottom:5px;">
+		<input type="checkbox" id="nexttab">
+		<label>Go to next tab when empty</label>
+	</div>
+	<div style="display:block; margin-bottom:5px;">
+		<input type="checkbox" id="removeextra">
+		<label>hide Paperback, Accessory, Ander, (Boek)accessoire, Hardcover</label>
+	</div>
+	<div style="display:block; margin-bottom:5px;">
+		<input type="checkbox" id="keyboard">
+		<label>use arrowkeys</label>
+	</div>
+	<div style="display:block; margin-bottom:5px;">
+		<input type="checkbox" id="nextbutton">
+		<label>show next button on screen</label>
+	</div>
+	<div style="display:block; margin-bottom:5px;">
+		<input type="checkbox" id="disable">
+		<label>disable</label>
+	</div>
+	<div id="status"></div>
+	<button id="save">Save</button>
+</body>
+</html>

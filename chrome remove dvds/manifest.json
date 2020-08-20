@@ -1,0 +1,19 @@
+{
+  "name": "chrome-amazon-nl-remove-dvd-cd-vhs-umd",
+  "description": "removes every dvd,lp,vhs, umd titel,bladmuziek,computergame,pc",
+  "version": "1.5",
+  "manifest_version": 2,
+  "permissions": [
+    "https://www.amazon.nl/",
+	"storage"
+  ],
+  "browser_action": {
+    "default_popup": "options.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.nl/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
